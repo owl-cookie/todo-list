@@ -1,4 +1,4 @@
-package org.todolist.config;
+package org.todolist.property;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -12,9 +12,10 @@ import java.util.Map;
 @ConfigurationProperties 를 사용하려면, Component annotation 이 필요함.
 
  */
-@Data
+
 @Component
 @ConfigurationProperties("fruit")
+@Data
 public class FruitProperty {
 	private List<Map> list;
 }
