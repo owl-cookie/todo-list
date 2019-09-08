@@ -25,7 +25,7 @@ repositories {
 task print(){
 
     doLast{
-        println "테스트 입니당"
+        println "jenkins-test"
     }
 }
 
